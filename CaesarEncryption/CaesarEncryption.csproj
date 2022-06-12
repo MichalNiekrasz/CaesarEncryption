@@ -10,6 +10,7 @@
       <RepositoryUrl>https://github.com/MichalNiekrasz/CaesarEncryption.git</RepositoryUrl>
       <Title>CaesarEncryptionAndDecryption</Title>
       <PackageTags>Encryption, Caesar, Password, Decryption</PackageTags>
+      <Version>1.1.0</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
