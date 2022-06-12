@@ -11,7 +11,7 @@
     "C:\\Users\\mnier\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "restore": {
       "projectUniqueName": "C:\\Code\\cs\\SzyfrowanieCezara\\CaesarEncryption\\CaesarEncryption.csproj",
       "projectName": "MichalNiekrasz.Programs.CaesarEncryptionAndDecryption",
