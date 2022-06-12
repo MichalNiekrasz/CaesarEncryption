@@ -80,12 +80,4 @@ public static class Caesar{
         }
         return false;
     }
-    private static void Main(){
-        // System.Console.WriteLine(CaesarEncryption("ABCD",-2,-4));
-        // output = YXYZ
-        System.Console.WriteLine(Encryption("to seria poradników, która wprowadzi każdego zainteresowanego w świat tych nowoczesnych mikrokontrolerów – od instalacji środowiska, przez stworzenie pierwszego projektu, aż do wykorzystywania popularnych peryferiów i modułów zewnętrznych. Kurs zawiera niezbędne minimum informacji teoretycznych – w zdecydowanej większości przypadków nacisk został położony na naukę przez obcowanie z danym zagadnieniem w praktyce. Kurs ten jest pełen praktycznych wskazówek i przykładów, które przydadzą się podczas późniejszej realizacji różnych projektów.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",-4));
-        System.Console.WriteLine();
-        System.Console.WriteLine(Decryption("pk|oane]|lkn]`jeg?s(|gp?n]|slnks]`ve|g]Ę`ack|v]ejpanaoks]jack|s|÷se]p|pu_d|jksk_vaoju_d|iegnkgkjpnkhan?s|?|k`|ejop]h]_fe|÷nk`kseog](|lnvav|opsknvajea|leansovack|lnkfagpq(|]Ę|`k|sugknvuopus]je]|lklqh]nju_d|lanubane?s|e|ik`q??s|vasjupnvju_d*|Gqno|v]sean]|jeav^u`ja|iejeiqi|ejbkni]_fe|paknapu_vju_d|?|s|v`a_u`ks]jaf|seugovk÷_e|lnvul]`g?s|j]_eog|vkop]?|lk?kĘkju|j]|j]qgu|lnvav|k^_ks]jea|v|`]jui|v]c]`jeajeai|s|ln]gpu_a*|Gqno|paj|faop|la?aj|ln]gpu_vju_d|sog]v?sag|e|lnvug?]`?s(|gp?na|lnvu`]`v!|oeu|lk`_v]o|l?Ejeafovaf|na]hev]_fe|n?Ęju_d|lnkfagp?s*",'a'));
-        
-    }
 }
