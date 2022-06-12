@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MichalNiekrasz.Programs.CaesarEncryptionAndDecryption</id>
+    <version>1.0.0</version>
+    <title>CaesarEncryptionAndDecryption</title>
+    <authors>Michal Niekrasz</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2. decrypt function (string, mostcommon) - result is decrypted text from a chipher Caesar. Note, that text has to be long enough for the program to find the most common letter. Use only characters that are between 127 and 32 (including) from ASCII table.</description>
+    <tags>Encryption, Caesar, Password, Decryption</tags>
+    <repository url="https://github.com/MichalNiekrasz/CaesarEncryption.git" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.runtimeconfig.json" target="lib\net6.0\CaesarEncryption.runtimeconfig.json" />
+    <file src="C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.dll" target="lib\net6.0\CaesarEncryption.dll" />
+  </files>
+</package>

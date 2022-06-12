@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Code\\cs\\SzyfrowanieCezara\\CaesarEncryption\\CaesarEncryption.csproj",
-        "projectName": "MichalNiekrasz.Programs.CaesarEncryption",
+        "projectName": "MichalNiekrasz.Programs.CaesarEncryptionAndDecryption",
         "projectPath": "C:\\Code\\cs\\SzyfrowanieCezara\\CaesarEncryption\\CaesarEncryption.csproj",
         "packagesPath": "C:\\Users\\mnier\\.nuget\\packages\\",
         "outputPath": "C:\\Code\\cs\\SzyfrowanieCezara\\CaesarEncryption\\obj\\",

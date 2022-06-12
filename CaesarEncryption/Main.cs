@@ -25,8 +25,18 @@ public static class Caesar{
             else if(overlap&&encryptedChar>MAX) encryptedChar = (char)((encryptedChar-MAX)+(MIN-1));      
             encryptedText += encryptedChar;     
         }
+
+        // this is needed to remove '\' activity in the chain
+        for (int i = 0; i < encryptedText.Length; i++)
+        {
+            if(encryptedText[i]=='\\'){
+                encryptedText = encryptedText.Insert(i,"\\");
+                i++;
+            }
+        }
         return encryptedText;
     }
+
     /// <summary>Decrypting the text. NOTE - to decrypt the text, the text can't be overlaped, enrypted in different keys or too short.</summary>
     /// <param name="encryptedText">Text you want to decrypt</param>
     /// <param name="mostCommonLetter">Type here a most common letter in your language for ex. for english it's "e"</param>
@@ -42,7 +52,6 @@ public static class Caesar{
             catch(IndexOutOfRangeException){
                 continue;
             }
-
         }
         int mostCommonIndex = 0;
         for (int i = 0; i < indexes.Length; i++)
@@ -80,4 +89,5 @@ public static class Caesar{
         }
         return false;
     }
+    private static void Main(){}
 }
