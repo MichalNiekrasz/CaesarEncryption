@@ -20,6 +20,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("CaesarEncryption")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaesarEncryption")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/MichalNiekrasz/CaesarEncryption.git")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
 
