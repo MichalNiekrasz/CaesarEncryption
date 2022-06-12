@@ -8,6 +8,7 @@
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
       <Description>Write the encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2.</Description>
       <RepositoryUrl>https://github.com/MichalNiekrasz/CaesarEncryption.git</RepositoryUrl>
+      <Title>CaesarEncryption</Title>
       <PackageTags>Encryption, Caesar, Password</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
