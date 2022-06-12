@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MichalNiekrasz.Programs.CaesarEncryption</id>
+    <version>1.0.0</version>
+    <authors>CaesarEncryption</authors>
+    <description>Write the encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2.</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.runtimeconfig.json" target="lib\net6.0\CaesarEncryption.runtimeconfig.json" />
+    <file src="C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.dll" target="lib\net6.0\CaesarEncryption.dll" />
+  </files>
+</package>

@@ -1,0 +1,15 @@
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.exe
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.deps.json
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.runtimeconfig.json
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.dll
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\ref\CaesarEncryption.dll
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\bin\Debug\net6.0\CaesarEncryption.pdb
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.csproj.AssemblyReference.cache
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.AssemblyInfoInputs.cache
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.AssemblyInfo.cs
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.csproj.CoreCompileInputs.cache
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.dll
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\ref\CaesarEncryption.dll
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.pdb
+C:\Code\cs\SzyfrowanieCezara\CaesarEncryption\obj\Debug\net6.0\CaesarEncryption.genruntimeconfig.cache

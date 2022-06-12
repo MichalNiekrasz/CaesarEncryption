@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+      <PackageId>MichalNiekrasz.Programs.CaesarEncryption</PackageId>
+      <Authors>Michal Niekrasz</Authors>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <Description>Write the encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2.</Description>
+      <RepositoryUrl></RepositoryUrl>
+      <PackageTags>Encryption, Caesar, Password</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+</Project>
