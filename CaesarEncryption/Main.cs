@@ -1,45 +1,51 @@
 ﻿// encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher
 // Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2.
 // decrypt function (string, mostcommon) - result is decrypted text from a chipher Caesar. Note, that text has to be
-// long enough for the program to find the most common letter. Use only characters that are between 127 and 32 (including) from ASCII table.
+// long enough for the program to find the most common letter. Use only characters that are between 126 and 32 (including) from ASCII table.
 public static class Caesar{
-    const int MAX = 127; // maximum ASCII number (including)
+    const int MAX = 127; // maximum ASCII number (not including)
     const int MIN = 32; // minimum ASCII number (including)
 
     /// <param name="text">Text you want to encrypt</param>
     /// <param name="key1">type here how vovels will be coded</param>
     /// <param name="key2">type here how consonants will be coded. leave blank if you want this key to has same value as key1</param>
-    /// <param name="overlap">overlaping the code, that in the returned string will be only big letters, not recomended</param>
-    /// <param name="polishVovels">type here is your text in polish language</param>
-    public static string Encryption(string text, int key1,bool overlap = true, int? key2 = null, bool polishVovels = false){
-        
+    /// <param name="overlap">overlaping the code, that in the returned string, chars will be only between 32 and 126(including) from ASCII table, recomended.</param>
+    /// <param name="polishVovels">type here is your text in polish language to use polish vovels</param>
+    /// <param name="neutralizeSpecialSigns">modifies the returned text in such a way that the special characters are neutralized (for ex. instead of '\' in string it will return '\\'). recomended only if you want to copy output and paste it in the code</param>
+    public static string Encryption(string text, int key1,bool overlap = true, bool neutralizeSpecialSigns = false,int? key2 = null, bool polishVovels = false){
+
+        key1 = key1 % (MAX-MIN);
+
         if(key2==null) key2=key1; 
 
-        string encryptedText="";   
-        char encryptedChar='x';     
+        string encryptedText="";  
+        int? encryptedCharInt;  
 
         foreach (char letter in text)
         {
-            encryptedChar = isVovel(letter,polishVovels)?  (char)(letter+key1) : (char)(letter+key2);
-            if(overlap&&encryptedChar<MIN) encryptedChar = (char)(MAX-((MIN-1)-encryptedChar));
-            else if(overlap&&encryptedChar>MAX) encryptedChar = (char)((encryptedChar-MAX)+(MIN-1));      
-            encryptedText += encryptedChar;     
+            encryptedCharInt = isVovel(letter,polishVovels)?  letter+key1 : letter+key2;
+            if(overlap&&encryptedCharInt<MIN) encryptedCharInt = MAX-(MIN-encryptedCharInt);
+            else if(overlap&&encryptedCharInt>=MAX) encryptedCharInt = (encryptedCharInt-MAX)+MIN;      
+            encryptedText += (char)encryptedCharInt;     
         }
 
-        // this is needed to remove '\' activity in the chain
-        for (int i = 0; i < encryptedText.Length; i++)
-        {
-            if(encryptedText[i]=='\\'){
-                encryptedText = encryptedText.Insert(i,"\\");
-                i++;
+        // this is needed to remove '\' and ' " ' activity in the string
+        if(neutralizeSpecialSigns){
+            for (int i = 0; i < encryptedText.Length; i++)
+            {
+                if(encryptedText[i]=='\\' || encryptedText[i]=='\"'){
+                    encryptedText = encryptedText.Insert(i,"\\");
+                    i++;
+                }
             }
         }
         return encryptedText;
     }
 
-    /// <summary>Decrypting the text. NOTE - to decrypt the text, the text can't be overlaped, enrypted in different keys or too short.</summary>
+    /// <summary>Decrypting the text. NOTE - to decrypt the text, the text can't be encrypted in different keys or too short.</summary>
     /// <param name="encryptedText">Text you want to decrypt</param>
-    /// <param name="mostCommonLetter">Type here a most common letter in your language for ex. for english it's "e"</param>
+    /// <param name="mostCommonLetter">Type here a most common letter in your language for ex. for english it's 'e' or ' '</param>
+    /// <param name="overlap">true, if you want to decrypt an encrypted text which has been overlaped.</param>
     public static string Decryption(string encryptedText,char mostCommonLetter, bool overlap = true){
 
         //finds most common letter in given string
@@ -54,27 +60,32 @@ public static class Caesar{
             }
         }
         int mostCommonIndex = 0;
+        int maxNumberOfChars = 0;
         for (int i = 0; i < indexes.Length; i++)
         {
-            if(indexes[i]>mostCommonIndex) mostCommonIndex = i;
+            if(indexes[i]>maxNumberOfChars){
+                mostCommonIndex = i;
+                maxNumberOfChars = indexes[i];
+            }
         }
 
         // determine the shift
-        int shift = mostCommonLetter - mostCommonIndex;
+        int shift = mostCommonIndex-mostCommonLetter;
+        shift = shift % (MAX-MIN);
 
         // decrypt each letter of the given text
         string decryptedText = "";
-        char decryptedChar;
+        int decryptedCharInt;
         foreach (var letter in encryptedText)
         {
-            decryptedChar = (char)(letter + shift);
-            if(overlap&&decryptedChar>MAX) decryptedChar = (char)((decryptedChar-MAX)+(MIN-1));
-            if(overlap&&decryptedChar<MIN) decryptedChar = (char)(MAX-((MIN-1)-decryptedChar));
+            decryptedCharInt = letter - shift;
+            if(overlap&&decryptedCharInt>=MAX) decryptedCharInt = (decryptedCharInt-MAX)+(MIN);
+            if(overlap&&decryptedCharInt<MIN) decryptedCharInt = MAX-(MIN-decryptedCharInt);
 
             //if still
-            if(overlap&&(decryptedChar<MIN||decryptedChar>MAX)) decryptedChar = (char)63; // 63 = '?'
+            if(overlap&&(decryptedCharInt<MIN||decryptedCharInt>MAX)) decryptedCharInt = 63; // 63 = '?'
 
-            decryptedText += decryptedChar;
+            decryptedText += (char)decryptedCharInt;
         }
         return decryptedText;
     }
@@ -89,5 +100,6 @@ public static class Caesar{
         }
         return false;
     }
-    private static void Main(){}
+    private static void Main(){
+}
 }
