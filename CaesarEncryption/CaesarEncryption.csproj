@@ -6,11 +6,11 @@
       <PackageId>MichalNiekrasz.Programs.CaesarEncryptionAndDecryption</PackageId>
       <Authors>Michal Niekrasz</Authors>
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
-      <Description>encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2. decrypt function (string, mostcommon) - result is decrypted text from a chipher Caesar. Note, that text has to be long enough for the program to find the most common letter. Use only characters that are between 127 and 32 (including) from ASCII table.</Description>
+      <Description>(bug free version). encrypt function (string, key1, key2), the result of which is the encrypted text with a cipher Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2 (key2 dont have to be set). decrypt function (string, mostcommon) - result is decrypted text from a chipher Caesar. Note, that text has to be long enough for the program to find the most common letter. Use only characters that are between 127 and 32 (including) from ASCII table. if you detect any bugs, please, contact me</Description>
       <RepositoryUrl>https://github.com/MichalNiekrasz/CaesarEncryption.git</RepositoryUrl>
       <Title>CaesarEncryptionAndDecryption</Title>
       <PackageTags>Encryption, Caesar, Password, Decryption</PackageTags>
-      <Version>1.1.0</Version>
+      <Version>2.0.0</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
