@@ -2,6 +2,7 @@
 // Caesar with modification - the vowels were coded with key1, and the consonants were coded with key2.
 // decrypt function (string, mostcommon) - result is decrypted text from a chipher Caesar. Note, that text has to be
 // long enough for the program to find the most common letter. Use only characters that are between 126 and 32 (including) from ASCII table.
+namespace Caesar;
 public static class Caesar{
     const int MAX = 127; // maximum ASCII number (not including)
     const int MIN = 32; // minimum ASCII number (including)
@@ -100,6 +101,4 @@ public static class Caesar{
         }
         return false;
     }
-    private static void Main(){
-}
 }
